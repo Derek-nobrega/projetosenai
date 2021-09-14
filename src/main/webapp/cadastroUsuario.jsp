@@ -53,7 +53,7 @@
 		  </div>
 		  <button  class="btn btn-primary">Salvar</button>
 		  <button  class="btn btn-warning " type="reset"  >Limpar</button>
-		  <a class="btn btn-secondary" href="login2.jsp" role="button">Voltar</a>
+		  <a class="btn btn-secondary" href="login.jsp" role="button">Voltar</a>
 	</form>
 
 </body>

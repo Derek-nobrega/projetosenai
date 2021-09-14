@@ -1,6 +1,9 @@
 <%@page import="model.login"%>
 <%@page import="java.util.List"%>
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import="dao.loginDao"%>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="crud.db.conexao" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>

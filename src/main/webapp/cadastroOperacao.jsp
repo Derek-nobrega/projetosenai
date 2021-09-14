@@ -10,7 +10,7 @@ login usuariologado = null;
 if (session.getAttribute("usuario") != null){
 	 usuariologado = (login) session.getAttribute("usuario");	
 }else{
-	response.sendRedirect("login2.jsp");
+	response.sendRedirect("login.jsp");
 }
 %>
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ try{
 <body>
 <ul class="nav">
 
-   <h1> Gerenciar Painel dos Pacientes do Centro Cirúgico <a class="btn btn-danger" href="sair.jsp">sair</a> </h1> 
+   <h1> Gerenciar Painel dos Pacientes do Centro Cirúgico <a class="btn btn-danger" style="margin-left: 150px" href="sair.jsp">sair</a> </h1> 
 </ul>
 	<form action="operacaoServlet" style="padding: 12px 20px" >
 	<input type="hidden" name="id" value="<%= p.getId() %>" ></input>
@@ -98,6 +98,6 @@ try{
 	document.getElementById("status_pac").value = "<%= p.getStatus_pac()%>" ;
 	</script>
 
-	<%@include file="index2.jsp"%>
+	<%@include file="index.jsp"%>
 </body>
 </html>

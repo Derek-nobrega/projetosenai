@@ -57,12 +57,12 @@ public class loginServlet2 extends HttpServlet {
 			if(acao != null && acao.equals("apagar")){
 				validar = objDao.apagar(objL.getId_login());
 				if (validar) {
-					rep1.sendRedirect("login2.jsp");
+					rep1.sendRedirect("login.jsp");
 				}
 			}else{
 			validar = objDao.alterar(objL);
 			if (validar) {
-				rep1.sendRedirect("login2.jsp?ok=SENHA_TROCADA");
+				rep1.sendRedirect("login.jsp?ok=SENHA_TROCADA");
 				
 			}
 			}
@@ -77,11 +77,11 @@ public class loginServlet2 extends HttpServlet {
 				session.setAttribute("usuario", objL); 
 				rep1.sendRedirect("cadastroOperacao.jsp");
 			}else {
-				rep1.sendRedirect("login2.jsp?erro=USUARIO_NAO_EXISTE");
+				rep1.sendRedirect("login.jsp?erro=USUARIO_NAO_EXISTE");
 			}
 		
 	  }else {
-		  rep1.sendRedirect("login2.jsp?erro=USUARIO_OU_SENHA_VAZIO");
+		  rep1.sendRedirect("login.jsp?erro=USUARIO_OU_SENHA_VAZIO");
 	  
 	}	
 	}

@@ -35,11 +35,11 @@ public class loginAddServlet extends HttpServlet {
 
 				validar = objDao.adicionar(objL);
 			
-				rep.sendRedirect("login2.jsp?ok=USUARIO_CRIADO");
+				rep.sendRedirect("login.jsp?ok=USUARIO_CRIADO");
 
 		
 		}else {
-		  rep.sendRedirect("login2.jsp?erro=USUARIO_OU_SENHA_VAZIO");
+		  rep.sendRedirect("login.jsp?erro=USUARIO_OU_SENHA_VAZIO");
 	  
 	}
 		

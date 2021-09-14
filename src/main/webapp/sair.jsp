@@ -1,4 +1,4 @@
 <% 
 session.invalidate();
-response.sendRedirect("login2.jsp");
+response.sendRedirect("login.jsp");
 %>

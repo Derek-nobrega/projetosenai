@@ -12,11 +12,13 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="com.sun.net.httpserver.Authenticator.Result"%>
 <%@page import="java.sql.PreparedStatement"%>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="crud.db.conexao" %> 
+<%@page import="java.sql.Connection" %>
+<%@page import="crud.db.conexao" %> 
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +40,8 @@ String formattedDate = myDateTime.format(myFormatter);
 <ul class="nav">
   <li class="nav-item">
   <img src="https://blog-static.infra.grancursosonline.com.br/wp-content/uploads/2015/06/03165141/GDF.jpg" alt="alternatetext" width="90" height="70">
-    Hospital Regional de Taguatinga – HRT|Secretaria de Saúde do Distrito Federal  <%= formattedDate %>
+
+    Hospital Regional de Taguatinga – HRT|Secretaria de Saúde do Distrito Federal  <%= formattedDate%> <% if (session.getAttribute("usuario") == null){%><a class="btn btn-primary" style="margin-left: 300px" href="login.jsp">Entrar</a><%} %> 
   </li>
 </ul>
     	 <%
